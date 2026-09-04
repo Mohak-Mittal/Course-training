@@ -11,7 +11,12 @@ for k in range (1, a+1):
 print("=",d)
 for i in range(1, a+1):
     b.append(pow(i, 2))
-print ("power of ", a, "is ",b)
+    print("pow of ",i,"is ",b[-1])
+print (b)
 for j in b:
+    if j == b[-1]:
+        print(j, end=" ")
+    else:
+        print(j,"+", end=" ")
     c = c + j
-print(c)
+print("=",c)
