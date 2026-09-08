@@ -95,7 +95,7 @@ dis = 0.05*(bill>1000) + 0.05*(bill>5000)
 Final_Bill = bill - (bill*dis)
 print (Final_Bill)
 
-"""
+"""output
 enter bill anount
 10000
 9000.0
@@ -122,7 +122,7 @@ for i in range (1,4):
 Weekly_Pay -= deduct
 print(Weekly_Pay)
 
-"""
+"""output
 enter day 1 Distance
 10
 day 1 pay = 560
@@ -149,15 +149,7 @@ b = a-b
 a = a-b
 print(f" cash {a} card {b}")
 
-"""
-enter day 1 Distance
-10
-day 1 pay = 560
-enter day 2 Distance
-10
-day 2 pay = 560
-enter day 3 Distance
-10
-day 3 pay = 560
-1480
+"""output
+cash 1000 card 5000
+ cash 5000 card 1000
 Press any key to continue . . ."""
