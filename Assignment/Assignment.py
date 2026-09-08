@@ -65,6 +65,23 @@ if b == 4:
         print ("Total Amount = ",Total_Amount)
 
 
+""" output
+enter 1 for apple
+enter 2 for banana
+enter 3 for orange
+enter 4 for grapes
+1
+avaliable items =  20
+product price = 100
+GST AMount =  5
+choose quantity
+12
+remaining product 8
+GST AMount =  60.0
+Total Amount =  1260.0
+Press any key to continue . . ."""
+
+
 
 
         # Q2. NovaMart is running a "Buy More, Save More" offer. Given the cart total,
@@ -78,6 +95,11 @@ dis = 0.05*(bill>1000) + 0.05*(bill>5000)
 Final_Bill = bill - (bill*dis)
 print (Final_Bill)
 
+"""
+enter bill anount
+10000
+9000.0
+Press any key to continue . . ."""
 
 
 
@@ -100,6 +122,18 @@ for i in range (1,4):
 Weekly_Pay -= deduct
 print(Weekly_Pay)
 
+"""
+enter day 1 Distance
+10
+day 1 pay = 560
+enter day 2 Distance
+10
+day 2 pay = 560
+enter day 3 Distance
+10
+day 3 pay = 560
+1480
+Press any key to continue . . ."""
 
 
 
@@ -114,3 +148,16 @@ a = a+b
 b = a-b
 a = a-b
 print(f" cash {a} card {b}")
+
+"""
+enter day 1 Distance
+10
+day 1 pay = 560
+enter day 2 Distance
+10
+day 2 pay = 560
+enter day 3 Distance
+10
+day 3 pay = 560
+1480
+Press any key to continue . . ."""
