@@ -1,0 +1,13 @@
+•	Attempt all questions.
+•	Each question is based on a real-world / industry scenario — read carefully before coding.
+•	Write clean, well-commented Python code.
+•   Use meaningful variable names — this is evaluated in interviews as much as correctness.
+•	Do not use any library/module beyond Python's built-in features unless specifically asked.
+•	For every program, include:
+•	(a) the code,
+•	(b) a sample input,
+•	(c) the corresponding output as a comment or screenshot.
+•	Submit a single .py file (or Jupyter Notebook) per section, named as RollNo_Section.py.
+•	Plagiarism / copy-paste from classmates will result in a zero for the full assignment.
+•	This assignment simulates the type of take-home
+•	screening round tasks given by product-based and service-based companies. Treat it like a real assignment round.
