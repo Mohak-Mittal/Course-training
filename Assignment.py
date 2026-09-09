@@ -229,3 +229,97 @@ enter your number
 9876543210
 MOH10NM26
 Press any key to continue . . ."""
+
+
+# Q9. A student is eligible for a scholarship if attendance >= 75% AND
+# (marks >= 85 OR is_sports_captain is True). Write a program that takes
+# these three inputs and prints whether the student is eligible.
+
+a = int(input("Enter Your Attendence\n"))
+b = int(input("Enter Your Marks\n"))
+c = str(input("Are You In Any Games? Yes or No?\n"))
+if a >= 75 and b >= 85:
+    print("Eligible For Scholarship")
+elif c == 'yes':
+    print("Eligible For Scholarship")
+else:
+    print("Not Eligible")
+
+"""Enter Your Attendence
+67
+Enter Your Marks
+97
+Are You In Any Games? Yes or No?
+no
+Not Eligible
+Press any key to continue . . """
+
+
+
+# Q10. Build a grading system:
+# marks >= 90 -> 'A+',
+# >= 75 -> 'A',
+# >= 60 -> 'B',
+# >= 40 -> 'C',
+# else -> 'Fail'.
+# Additionally, if the student scored 100, print a special "Topper of the Year" message.
+
+print("Grading System\nmarks == 100 -> 'topper' \nmarks >= 90 -> 'A+',\nmarks >= 75 -> 'A',\nmarks >= 60 -> 'B',\nmarks >= 40 -> 'C',\nelse -> 'Fail'.")
+a = int(input("Enter Your Marks\n"))
+if a == 100:
+    print("Topper Of The Year")
+elif a >= 90:
+    print("A+")
+elif a >= 75:
+    print("A")
+elif a >= 60:
+    print("B")
+elif a >= 40:
+    print("C")
+else:
+    print("Fail")
+
+"""Grading System
+marks == 100 -> 'topper'
+marks >= 90 -> 'A+',
+marks >= 75 -> 'A',
+marks >= 60 -> 'B',
+marks >= 40 -> 'C',
+else -> 'Fail'.
+Enter Your Marks
+98
+A+
+Press any key to continue . . ."""
+
+
+
+# Q11. A ride-booking feature at BrightPath's transport wing charges fare based
+# on time of day: Peak hours (8-10 AM, 6-8 PM) add a 20% surcharge; late night
+# (11 PM-5 AM) adds a 15% night charge; otherwise, normal fare applies. Write
+# nested if-else logic to compute the final fare for a given hour (24-hr format)
+# and base fare.
+
+a = int(input("Enter Your Time In 24-hr Formet\n"))
+b = 100
+f = 0
+s = 0
+if a >= 6 and a <= 22:
+    if a >= 8 and a <= 10:
+        s = b * 20/100
+        f = b + s
+        print(f)
+    elif a >= 18 and a <= 20:
+        s = b * 20/100
+        f = b + s
+        print(f)
+    else:
+        print(b)
+else:
+     s = b * 15/100
+     f = b + s
+     print(f)
+
+
+"""Enter Your Time In 24-hr Formet
+23
+115.0"""

@@ -66,6 +66,7 @@ b = tuple(fru)
 #16 convert this tuple into list
 Fru :tuple[str] = ("apple" , "banana" , "mango")
 B = list(Fru)
+print(B)
 
 #17 join this 2 tuples
 a : tuple[int] = (1 , 2 , 3)
