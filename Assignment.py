@@ -323,3 +323,118 @@ else:
 """Enter Your Time In 24-hr Formet
 23
 115.0"""
+
+
+
+# Q12. The warehouse receives daily stock counts for 7 days in a week. Using a loop,
+# calculate the total, average, and the day (1-7) with the highest stock received.
+b = 0
+c = 0
+avg = 0
+for i in range (1,8):
+	a = int(input(f"Enter day {i} stock\n"))
+	c = c + a
+	if b < a:
+		b = a
+		d = i
+avg = c/7
+print (f"day {d} has most stock")
+print (f"Total Stock is : {c}")
+print (f"average of storck is : {avg}")
+
+
+"""Enter day 1 stock
+12
+Enter day 2 stock
+32
+Enter day 3 stock
+35
+Enter day 4 stock
+46
+Enter day 5 stock
+345
+Enter day 6 stock
+234
+Enter day 7 stock
+5
+day 5 has most stock
+Total Stock is : 709
+average of storck is : 101.28571428571429
+Press any key to continue . . ."""
+
+
+
+# Q13. Write a program using a while loop that keeps asking a warehouse staff member to enter
+# product codes until they type 'DONE'. Count how many valid product codes (assume any
+# 6-character alphanumeric string is valid) were entered.
+
+b = 0
+print ("Enter done To Exit")
+a = str(input("Enter Product Key\n"))
+while a != 'done':
+    a = str(input("Enter Product Key\n"))
+    if len(a)==6 and a.isalnum():
+        b = b + 1
+print ("Valid Product Codes Are : ",b)
+
+
+
+"""Enter done To Exit
+Enter Product Key
+mohak
+Enter Product Key
+moh123
+Enter Product Key
+123456
+Enter Product Key
+123@34
+Enter Product Key
+@mohak
+Enter Product Key
+done
+Valid Product Codes Are :  2
+Press any key to continue . . ."""
+
+
+
+# Q14. Using nested loops, print a warehouse "rack map" of size R rows x C columns (take R
+# and C as input), where each cell shows its rack ID in the format R1-C1, R1-C2, etc. Use
+# loop control statements (break/continue) to skip and not print any rack marked as "under
+# maintenance" (hardcode 2-3 such racks).
+
+a = int(input("Enter Number Of Rows\n"))
+b = int(input("Enter Number Of Columns\n"))
+for i in range (1 , a+1):
+    for j in range (1 , b+1):
+        if i == 3 and j == 1: # 3rd row only 1st column is under maintanence
+            continue
+        if i == 1 and j == 3: # 1st row 3rd and rest of the column is under maintanence
+            break
+        if i ==2 and j == 3:  # 2nd row 3rd and rest of te clumn are under maintanence
+            break
+        print (f"R{i}-C{j}")
+
+
+"""Enter Number Of Rows
+5
+Enter Number Of Columns
+5
+R1-C1
+R1-C2
+R2-C1
+R2-C2
+R3-C2
+R3-C3
+R3-C4
+R3-C5
+R4-C1
+R4-C2
+R4-C3
+R4-C4
+R4-C5
+R5-C1
+R5-C2
+R5-C3
+R5-C4
+R5-C5
+Press any key to continue . . ."""
