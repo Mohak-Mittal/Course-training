@@ -1,0 +1,9 @@
+{
+    "name": "Mohak",
+    "role": "Developer",
+    "skills": [
+        "Python",
+        "Machine Learning"
+    ],
+    "is_active": true
+}
