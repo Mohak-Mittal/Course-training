@@ -24,10 +24,6 @@ data = {
 
 df = pd.DataFrame(data)
 
-print (df)
-
-print(df.head())
-
 print(df.tail())
 
 print(df.sample(5, random_state=42))
