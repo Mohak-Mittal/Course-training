@@ -1,4 +1,3 @@
-
 # ============================================================
 #                  COMPLETE NUMPY TUTORIAL
 #              Beginner Friendly Teaching Program
